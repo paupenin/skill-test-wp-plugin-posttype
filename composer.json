@@ -1,0 +1,25 @@
+{
+    "name": "paupenin/wp-skill-test",
+    "description": "Skill test for Wordpress Plugin Posttype",
+    "type": "wordpress-muplugin",
+    "authors": [
+        {
+            "name": "Pau Penin",
+            "email": "job@paupenin.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["src"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": ".\\vendor\\bin\\phpunit"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
